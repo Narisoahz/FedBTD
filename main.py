@@ -93,7 +93,7 @@ if __name__=='__main__':
     #通过load_data确定是加载数据还是下载数据
     if not args.load_data:
         #下载数据集
-        train_ds, test_ds = download_data(args.dataset, '/home/zsr/data/')
+        train_ds, test_ds = download_data(args.dataset, './data/')
         #合并训练集和测试集 
         dataset_image = []
         dataset_label = []
